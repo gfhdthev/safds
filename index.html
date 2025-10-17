@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Аудиоплеер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="track-list-block">
+        <h2>Список треков</h2>
+        <ul id="track-list"></ul>
+    </div>
+
+    <div id="player-block" class="hidden">
+        <div class="cover">
+            <img id="cover" src="" alt="Обложка">
+        </div>
+        <div class="info">
+            <h3 id="title"></h3>
+            <p id="artist"></p>
+        </div>
+        <audio id="audio"></audio>
+
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress" value="0" min="0" max="100" step="0.1">
+            <span id="total-time">0:00</span>
+        </div>
+
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play-pause" aria-label="Воспроизведение">▶</button>
+            <button id="next">⏭</button>
+            <button id="shuffle">⇄</button>
+            <input type="range" id="volume" min="0" max="1" step="0.01">
+        </div>
+
+        <button id="back">⬅ Назад к списку</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
