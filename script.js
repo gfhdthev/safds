@@ -1,4 +1,3 @@
-// Массив треков (добавь свои)
 const tracks = [
     {
         title: "NIRWANA",
@@ -109,7 +108,6 @@ tracks.forEach((track, index) => {
     trackList.appendChild(li);
 });
 
-// Загрузка трека
 function loadTrack(index, shouldPlay = false) {
     const track = tracks[index];
     audio.src = track.src;
